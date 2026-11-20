@@ -1,0 +1,34 @@
+
+> cybertrace@1.0.0 test
+> tsx --test --test-concurrency=1 tests/*.test.ts
+
+✔ SQL constraint rejects invalid severity (57.852992ms)
+✔ SQL rejects missing foreign key (13.944936ms)
+✔ SQL rejects duplicate user email (8.083664ms)
+✔ SQL rejects duplicate junction key (14.594962ms)
+✔ Transaction rollback removes partial insert (10.567409ms)
+✔ Status trigger records actor and history (11.905192ms)
+✔ Illegal workflow transition rejected (8.412886ms)
+✔ Status update without actor rejected (6.835195ms)
+✔ Completed remediation requires completion date (9.623773ms)
+✔ MongoDB rejects invalid log document (39.474487ms)
+✔ MongoDB aggregates expected event totals (5.445841ms)
+✔ pgvector cosine ranks identical vectors first (2.265341ms)
+✔ Incident overview does not multiply incident rows (4.577655ms)
+✔ Analysts read created incidents but edit only assigned incidents (0.893708ms)
+✔ Non-members cannot read incidents (0.117783ms)
+✔ Admin can read and edit incidents (0.095317ms)
+✔ Unknown incident fields and short description rejected (3.818931ms)
+✔ Optimistic update version required (0.771851ms)
+✔ Invalid source IP rejected (1.532033ms)
+✔ Weak account password rejected (0.911479ms)
+✔ Chunk windows preserve source coverage (0.353029ms)
+✔ Cross-origin mutation rejected (13.393703ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1037.587667

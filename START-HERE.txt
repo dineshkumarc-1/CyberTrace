@@ -1,0 +1,24 @@
+CYBERTRACE — COMPLETE SOURCE + DBMS DELIVERABLES
+
+1. Open README.md for exact installation instructions.
+2. Open docs/Project-Report.pdf for the report.
+3. Open docs/REQUIREMENTS-TRACEABILITY.md for every PDF guideline.
+4. Open docs/TEST-RESULTS.md for actual test results and limitations.
+5. Diagrams, data dictionary, screenshots, demo guide and viva are under docs/.
+
+Quick sequence (configure .env first):
+  npm ci
+  docker compose up -d
+  npm run db:setup
+  npm run db:seed
+  npm run embeddings      [leave running in terminal 1]
+  npm run worker          [leave running in terminal 2]
+  npm run dev             [terminal 3; open http://localhost:3000]
+
+No credentials, dependency folders, database files or model cache are bundled.
+First installation needs internet. Native Docker deployment must be tested locally;
+the delivered verification used a disclosed isolated PostgreSQL-engine harness.
+
+The source Git bundle has one AI-assisted initial commit, not invented student
+contribution history. Fill real names/IDs, confirm title uniqueness, obtain required
+AI-assistance approval, and record genuine two-member development in your GitHub repo.

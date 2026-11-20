@@ -1,0 +1,1 @@
+DDL/DML, advanced SQL, trigger and Mongo aggregation demonstrations executed.

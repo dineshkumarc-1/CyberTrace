@@ -1,0 +1,149 @@
+{
+  "evaluatedAt": "2026-10-15T16:36:03.123Z",
+  "dataset": "50 synthetic incidents; labels based on seeded attack families; not a real-world benchmark",
+  "model": "Xenova/all-MiniLM-L6-v2",
+  "hitAt5": 1,
+  "meanPrecisionAt5": 1,
+  "results": [
+    {
+      "query": "Employee gave a password to a counterfeit login website",
+      "relevantFamily": 0,
+      "relevantCount": 5,
+      "resultIds": [
+        "8365f604-6b5d-4b74-a0e8-281db499231e",
+        "1587736a-c23c-4132-bac9-bd76ef90aba8",
+        "07b5f477-f82e-4f9c-99da-2312492d2886",
+        "4cc6ba78-01f9-4e71-91e1-dfcca7874619",
+        "d1b582df-7881-41b2-ab78-05848e56c5e2"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "Files were locked by malware demanding payment",
+      "relevantFamily": 1,
+      "relevantCount": 5,
+      "resultIds": [
+        "bcbfd528-11c3-4d66-9d75-83cbcd70d317",
+        "5fa940b2-3d39-4ef9-891f-bb9dde9824ff",
+        "b8d05c72-1c25-43a8-ae26-41a4e973fadc",
+        "34543480-4392-47eb-b6a4-6036c602e7a3",
+        "f2d20d17-124a-485e-85bc-22a8dc7a6501"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "A crafted web input changed a database query",
+      "relevantFamily": 2,
+      "relevantCount": 5,
+      "resultIds": [
+        "f2ab472a-db0e-4d17-a4f4-9443951b1f75",
+        "bcf4b021-801c-4bb1-b732-6f0d4a925209",
+        "ecb3bf58-7933-4405-b8ad-e5dd8779c458",
+        "68c36cbd-563a-44b3-852a-94e5e972ab47",
+        "fa84ff75-7579-4bd5-bf33-291253c52cc1"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "Someone repeatedly guessed passwords on the remote access gateway",
+      "relevantFamily": 3,
+      "relevantCount": 5,
+      "resultIds": [
+        "afd1ce5f-39ef-48ff-94d3-dc6cb76a03e5",
+        "affa633e-785c-4e1a-a702-0d2f9f1bda32",
+        "8c1e7859-bc5a-4091-b695-d36115c1b78f",
+        "1372ed96-9383-4519-be05-ed48506b06f5",
+        "e64c1450-32e5-4183-9a1b-62a2e61fc863"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "Confidential files were sent outside the organization",
+      "relevantFamily": 4,
+      "relevantCount": 5,
+      "resultIds": [
+        "82e5e7ef-1c87-43af-9260-73f0d89ac10d",
+        "aef75467-61a4-47ff-b559-8207d6b6b125",
+        "37478de9-12cc-404b-85f8-57f359ccb628",
+        "4d8cf61b-4c5e-49d8-b636-e24554cd1b85",
+        "9821d2b0-25f8-45ed-a768-da4f93813ef4"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "A local exploit granted administrator access",
+      "relevantFamily": 5,
+      "relevantCount": 5,
+      "resultIds": [
+        "7609b6da-5446-4e57-a4d0-efe7038e0c42",
+        "e989b7b4-382f-4fec-bcc4-9315f5669f81",
+        "2951023c-f3e5-4f47-8cc7-edf3f160093c",
+        "146b2e07-e532-4fc1-9fa6-651b0e675d77",
+        "ed45db70-62e4-4d60-8eb2-c6c302668620"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "An encoded script downloaded an executable",
+      "relevantFamily": 6,
+      "relevantCount": 5,
+      "resultIds": [
+        "cc26cbac-0636-4eff-997f-18f5fb9c2b1a",
+        "09a5047e-820c-4c84-acb0-773a07da7525",
+        "e142f626-1bac-4db3-a32c-5a70e9e5e3a1",
+        "30449600-3188-466d-97ee-20c52d80dfaa",
+        "e34abe28-77a8-42bf-a096-496d0bfd1e72"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "Traffic overwhelmed the public application",
+      "relevantFamily": 7,
+      "relevantCount": 5,
+      "resultIds": [
+        "8c210dcc-e0a5-4b6b-b434-936ad8dd4d19",
+        "3d2cf9fc-ac18-4b57-9e8c-117256f7541a",
+        "0994eefc-6ef4-47d2-9b4a-74ad75c866c0",
+        "2b03d929-d5a7-4b71-a113-769fbf0fa5f0",
+        "e60d9b58-e313-4216-b2a2-f5fa43502646"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "A rogue browser add-on stole login sessions",
+      "relevantFamily": 8,
+      "relevantCount": 5,
+      "resultIds": [
+        "a826ae21-a33d-4362-95e4-50f53e24c21c",
+        "cf871ff7-8d5a-4496-9fcf-8a2e177ee898",
+        "130729ea-29f5-47c7-a625-b6ebbc485a9a",
+        "9eeece30-2011-4db3-a43a-5b6bff0ae9c2",
+        "e3294a93-c1bc-49cc-88c3-de7a79be9024"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    },
+    {
+      "query": "Cloud documents were downloadable without signing in",
+      "relevantFamily": 9,
+      "relevantCount": 5,
+      "resultIds": [
+        "a6119af0-592e-4096-8fde-99619df1d925",
+        "da0ca295-ff48-4427-8cee-3ebe6b1a63d8",
+        "4fcc5556-6608-4e45-94a7-46293d99ed4b",
+        "8beb277a-f2e5-4ae3-a9ab-e24e136493d0",
+        "e5737e19-a067-42ad-ab97-0f630cef32b3"
+      ],
+      "hitAt5": 1,
+      "precisionAt5": 1
+    }
+  ]
+}

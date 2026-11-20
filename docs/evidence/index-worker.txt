@@ -1,0 +1,5 @@
+
+> cybertrace@1.0.0 worker
+> tsx scripts/worker.ts --drain
+
+{ processed: 150 }

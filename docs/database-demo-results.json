@@ -1,0 +1,63 @@
+{
+  "executedAt": "2026-10-15T16:41:16.090Z",
+  "ddlDmlScript": "Completed; mutating demonstration statements rolled back",
+  "sqlVersion": {
+    "version": "PostgreSQL 18.6 (PGlite 0.5.10) on wasm32-unknown-emscripten, compiled by emcc (Emscripten gcc/clang-like replacement + linker emulating GNU ld) 6.0.5 (1db513782be24469589d7cb8a1f1834e9a33f271), 32-bit"
+  },
+  "mongoVersion": "8.0.17",
+  "severityGroups": [
+    {
+      "severity": "High",
+      "incidents": 20
+    },
+    {
+      "severity": "Medium",
+      "incidents": 15
+    },
+    {
+      "severity": "Critical",
+      "incidents": 10
+    },
+    {
+      "severity": "Low",
+      "incidents": 7
+    }
+  ],
+  "overviewSample": [
+    {
+      "title": "E2E synthetic credential incident",
+      "assignee_name": "Maya Analyst",
+      "asset_count": 0
+    },
+    {
+      "title": "E2E synthetic credential incident",
+      "assignee_name": "Maya Analyst",
+      "asset_count": 0
+    },
+    {
+      "title": "Public cloud storage exposure · Training case 50",
+      "assignee_name": "Maya Analyst",
+      "asset_count": 1
+    },
+    {
+      "title": "Malicious browser extension · Training case 49",
+      "assignee_name": "Noah Analyst",
+      "asset_count": 1
+    },
+    {
+      "title": "Web service denial · Training case 48",
+      "assignee_name": "Maya Analyst",
+      "asset_count": 1
+    }
+  ],
+  "mongoAggregation": [
+    {
+      "_id": "authentication_anomaly",
+      "total": 3
+    },
+    {
+      "_id": "investigation_note",
+      "total": 1
+    }
+  ]
+}

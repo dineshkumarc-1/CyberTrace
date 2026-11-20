@@ -1,0 +1,19 @@
+digraph A {
+ graph [rankdir=TB,bgcolor="white",pad=.4,nodesep=.5,ranksep=.65,fontname="Arial",label="CyberTrace | System architecture",labelloc=t,fontsize=22];
+ node [shape=box,style="rounded,filled",fillcolor="#edf3fd",color="#9bb9e4",fontname="Arial",fontsize=13,margin=".25,.18"];
+ edge [fontname="Arial",fontsize=10,color="#64748b"];
+ browser [label="Browser\nNext.js responsive interface"];
+ api [label="Next.js Route Handlers\nSession + RBAC · validation · service layer"];
+ sql [shape=cylinder,label="PostgreSQL + pgvector\nStructured entities · constraints · audit\nJobs · source versions · vector chunks"];
+ mongo [shape=cylinder,label="MongoDB\nInvestigation reports · analyst notes\nFlexible incident logs",fillcolor="#edf7f1",color="#a7d3b5"];
+ worker [label="Indexing worker\nClaim job → load source → chunk\nembed → recheck version → replace vectors"];
+ model [label="Loopback embedding service\nONNX MiniLM · mean pooling\n384 dimensions · L2 normalization"];
+ browser->api [label="HTTPS / JSON + session cookie"];
+ api->sql [label="Parameterized SQL"];
+ api->mongo [label="Validated documents"];
+ api->model [label="Query embedding"];
+ sql->worker [label="Pending jobs"];
+ worker->mongo [label="Read report source"];
+ worker->model [label="Text chunks"];
+ worker->sql [label="Versioned vectors + job state"];
+}

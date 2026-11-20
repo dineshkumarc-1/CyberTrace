@@ -1,0 +1,23 @@
+digraph ER {
+ graph [rankdir=LR,bgcolor="white",pad="0.35",nodesep="0.45",ranksep="1.0",fontname="Arial",label="CyberTrace | Conceptual ER model",labelloc=t,fontsize=22];
+ node [shape=box,style="rounded,filled",fillcolor="#edf3fd",color="#a9c2e8",fontname="Arial",fontsize=13,margin=".18,.12"];
+ edge [fontname="Arial",fontsize=10,color="#64748b",arrowsize=.7];
+ users [label="USER\nuser_id (PK) · email (UQ)\nname · password_hash · role"];
+ incident [label="INCIDENT\nincident_id (PK)\ntitle · description · severity\nstatus · detected_at · version"];
+ assets [label="ASSET\nasset_id (PK)\nname · type · criticality"];
+ vuln [label="VULNERABILITY\nvulnerability_id (PK)\ncve_id (UQ, optional)"];
+ technique [label="ATTACK TECHNIQUE\ntechnique_id (PK)\nmitre_id (UQ, optional)"];
+ remediation [label="REMEDIATION\nremediation_id (PK)\naction · status · completed_at"];
+ history [label="STATUS HISTORY\nhistory_id (PK)\nold/new status · actor · time"];
+ report [label="INVESTIGATION REPORT\nMongoDB document\nsummary · findings · notes",fillcolor="#edf7f1",color="#a7d3b5"];
+ log [label="INCIDENT LOG\nMongoDB document\nevent · time · raw_data",fillcolor="#edf7f1",color="#a7d3b5"];
+ users->incident [label="creates 1 : N\ncreator mandatory"];
+ users->incident [label="assigned 1 : N\nassignee optional"];
+ incident->assets [label="M : N via incident_assets"];
+ incident->vuln [label="M : N via incident_vulnerabilities"];
+ incident->technique [label="M : N via incident_techniques"];
+ incident->remediation [label="1 : N"];
+ incident->history [label="1 : N"];
+ incident->report [label="1 : N · application reference",style=dashed];
+ incident->log [label="1 : N · application reference",style=dashed];
+}

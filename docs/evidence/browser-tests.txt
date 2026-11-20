@@ -1,0 +1,15 @@
+
+> cybertrace@1.0.0 test:e2e
+> playwright test
+
+
+Running 6 tests using 1 worker
+
+  ✓  1 tests/e2e/workflow.spec.ts:4:5 › Admin creates incident, records evidence, changes status and manages links (3.3s)
+  ✓  2 tests/e2e/workflow.spec.ts:16:5 › Analyst authorization and request integrity (1.3s)
+  ✓  3 tests/e2e/workflow.spec.ts:26:5 › Desktop and mobile pages remain usable (1.8s)
+  ✓  4 tests/e2e/workflow.spec.ts:31:5 › Semantic search returns incident sources (1.6s)
+  ✓  5 tests/e2e/workflow.spec.ts:34:5 › Real cross-user records, optimistic conflicts and search permissions (2.3s)
+  ✓  6 tests/e2e/workflow.spec.ts:45:5 › Admin account/reference operations and report version editing (1.8s)
+
+  6 passed (13.4s)
